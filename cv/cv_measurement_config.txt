@@ -1,0 +1,29 @@
+# rate should be 0.01 V / s
+# oscillation should be 15 mV
+[c-v]
+# starting bias, in Volts
+start = -10.0
+# ending bias, in Volts
+stop = 10.0
+# how many data points from start to stop
+number of points = 2001
+# which frequencies to use, in Hz
+frequencies = [1000, 3000 ]
+# how many seconds to wait between setting the bias and measuring
+dwell time = 1
+# ac voltage level for capacitance measurement, in Volts
+oscillation = 0.015
+
+[c-f]
+# starting frequency, in Hz. Smallest = 20 Hz
+start = 20
+# ending frequency, in Hz. Largest = 1000000 Hz (1 Mhz)
+stop = 1000000
+# how many data points from start to stop
+number of points = 101
+# which bias voltages to use, in Volts
+biases = []
+# how many seconds to wait between setting the frequency and measuring
+dwell time = 1
+# ac voltage level for capacitance measurement, in Volts
+oscillation = 0.015
